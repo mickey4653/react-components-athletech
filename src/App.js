@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import AddTodoForm from "./components/AddTodoForm";
 import TodoList from "./components/TodoList";
 import "./App.css";
+import Card from "./components/Card/Card";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -18,11 +19,13 @@ const App = () => {
   };
 
   return (
+    <Card>
     <div>
       <Header />
       <AddTodoForm addTodo={addTodo} />
       <TodoList todos={todos} onDelete={deleteTodo} />
     </div>
+    </Card>
   );
 };
 
