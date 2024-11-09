@@ -23,3 +23,6 @@ input[type="text"]{
   border-radius: 4px;
   font-size: 14px;
 }
+.progress-bar-container, .modal-container{
+margin-top: 30px;
+}
